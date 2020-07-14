@@ -1,0 +1,10 @@
+.para{
+  background-color: white;
+  // animation-name: myanimation;
+  // animation-duration: 4s;
+}
+
+@keyframes myanimation {
+  0% {background-color: white;}
+  100% {background-color: red;}
+}
