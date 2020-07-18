@@ -1,6 +1,5 @@
-$bgColor: white;
-$borderColor: black;
-$textColor: $borderColor;
+@import '../../../theme.scss';
+
 .rectangle{
   height: 100%;
   width: 75%;
@@ -51,20 +50,5 @@ $textColor: $borderColor;
   .info{
     font-size: large;
     width: 70%;
-  }
-}
-
-.navbar{
-  position: fixed;
-  width: 25%;
-  right: 0;
-  color: $textColor;
-  margin-top: 2em;
-  display: grid;
-  place-items: center;
-  font-family: Barlow;
-  font-weight: 100;
-  .item{
-    grid-row: 1;
   }
 }

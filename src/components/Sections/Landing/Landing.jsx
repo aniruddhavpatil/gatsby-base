@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.scss';
 import Anime, { anime } from 'react-anime';
+import { Element } from 'react-scroll';
 
 const CustomLanding = () => {
   const animationType = 'easeInOutQuart';
@@ -15,7 +16,7 @@ const CustomLanding = () => {
   //   return () => {
   //   };
   // }, []);
-    <div className="wrapper">
+    <Element name="landing" className="wrapper">
       <Anime
         translateX="100%"
         translateY="50%"
@@ -26,13 +27,6 @@ const CustomLanding = () => {
       </Anime>
       <div className="empty" />
       <div className="empty" />
-
-      <div className="navbar">
-        <div className="item">About</div>
-        <div className="item">Experience</div>
-        <div className="item">Contact</div>
-
-      </div>
       <div className="empty" />
       <div className="text">
         <div className="intro">Hello, I'm</div>
@@ -51,7 +45,7 @@ const CustomLanding = () => {
       >
         <div className="rectangle bottom" />
       </Anime>
-    </div>
+    </Element>
   );
 };
 
