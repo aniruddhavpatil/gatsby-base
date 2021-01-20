@@ -1,3 +1,26 @@
 $bgColor: white;
 $borderColor: black;
 $textColor: $borderColor;
+
+$sm: 320px;
+// $md: 720px;
+$lg: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $sm) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $sm + 1) and (max-width: $lg - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $lg) { @content; }
+  }
+}
+.wrapper{
+  height: 100vh;
+  background-color: $bgColor;
+  display: grid;
+  place-items: center;
+  // border-bottom: solid thin $textColor;
+}
