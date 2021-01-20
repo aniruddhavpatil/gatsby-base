@@ -1,9 +1,12 @@
 import React from 'react';
 import './About.scss';
 import { Element } from 'react-scroll';
+import ParticleTheme from '../../Effects/ParticleTheme';
 
 const CustomAbout = () => (
   <Element name="about" className="wrapper">
+    <ParticleTheme />
+
     <div className="wrapper">
       <div className="text">
         <div className="intro">Hello, I'm</div>

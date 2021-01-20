@@ -3,6 +3,7 @@ import './Landing.scss';
 import { Element } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import ParticleTheme from '../../Effects/ParticleTheme';
 
 const CustomLanding = () => (
   // useEffect(() => {
@@ -16,7 +17,7 @@ const CustomLanding = () => (
   //   };
   // }, []);
   <Element className="landing">
-
+    <ParticleTheme />
     <div className="wrapper">
       <div className="text">
         <div className="intro">Hello, I'm</div>
