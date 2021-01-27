@@ -1,0 +1,56 @@
+@import '../../theme.scss';
+
+
+.button{
+  color: $bgColor;
+  cursor: pointer;
+}
+.mobile-navbar{
+    position: fixed;
+    background: green;
+    width: 100%;
+    display: none;
+    grid-template-columns: 1fr auto;
+    place-items: center;
+}
+.brand{
+  justify-self: start;
+  padding: 0 20px;
+  color: $bgColor;
+  font-family: Barlow;
+}
+
+.mobile-navbar-items{
+  min-width: 100px;
+  width: 100%;
+  height: 50px;
+  right: 0;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  padding: 0 20px;
+  font-family: Barlow;
+  font-weight: 100;
+  // justify-content: space-between;
+}
+
+.item{
+  grid-row: 1;    
+  :hover{
+    font-weight: 900;
+  }
+}
+
+
+
+a{
+  text-decoration: none;
+  color: $textColor;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobile-navbar{
+    background: green;
+    display: grid;
+  }
+}

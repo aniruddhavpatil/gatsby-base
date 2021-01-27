@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       > */}
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <main>{children}</main>
       {/* <footer>
           © {new Date().getFullYear()}, Built with
